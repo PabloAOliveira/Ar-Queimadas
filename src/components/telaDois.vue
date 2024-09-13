@@ -1,7 +1,13 @@
 <template>
+  <div class="video-background">
+    <video autoplay muted loop>
+      <source src="/amazonia.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
   <v-container
     fluid
-    class="d-flex justify-center align-center background-container"
+    class="d-flex justify-center align-center"
     style="height: 100vh"
   >
     <v-card v-if="airData" class="mx-auto" max-width="368">
@@ -137,10 +143,35 @@ export default {
 </script>
 
 <style>
-.background-container {
-  background-image: url("../assets/flame.png"); /* Substitua pelo caminho da sua imagem */
-  background-size: cover; /* Faz a imagem cobrir todo o contêiner */
-  background-position: center; /* Centraliza a imagem */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  background: url("path/to/your/placeholder-image.jpg") no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 .v-card-title {
