@@ -58,8 +58,8 @@
 
         <v-card v-else class="mx-auto text-center" max-width="1150">
           <v-card-title class="text-h5"
-            >Carregando dados da qualidade do ar. Caso não seja possível
-            carregar, permita a localização do site.
+            >Carregando dados da qualidade do ar. Caso não carregue, permita a
+            localização do site.
           </v-card-title>
         </v-card>
       </v-col>
