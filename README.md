@@ -1,3 +1,12 @@
+🔍 O que o aplicativo faz:
+- Exibe o Índice de Qualidade do Ar (AQI) em tempo real.
+
+  
+🔧 Tecnologias Utilizadas:
+- Vue.js para a construção do front-end.
+- Axios para chamadas à API e tratamento de dados.
+- Vuetify para uma UI moderna e estilizada.
+
 # Vuetify (Default)
 
 This is the official scaffolding tool for Vuetify, designed to give you a head start in building your new Vuetify application. It sets up a base template with all the necessary configurations and standard directory structure, enabling you to begin development without the hassle of setting up the project from scratch.
