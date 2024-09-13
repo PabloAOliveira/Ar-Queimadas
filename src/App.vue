@@ -1,12 +1,12 @@
 <template>
   <v-app>
     <v-main>
-      <TelaDois />
+      <Home />
     </v-main>
   </v-app>
 </template>
 
 <script setup>
 // import TelaInicial from "./components/telaInicial.vue";
-import TelaDois from "./components/telaDois.vue";
+import Home from "./components/home.vue";
 </script>
